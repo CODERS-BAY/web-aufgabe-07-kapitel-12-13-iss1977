@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* --------------------------  Styling the NAVBAR   ------------------------- */
+
+.navbar-brand img {
+    height: 60px;
+}
+
+#navbarNav {
+    display: flex;
+}
+
+.navbar-nav {
+    justify-content: flex-end;
+
+}
+
+
+/*------------------------------------- Styling the Hero section  -------------------------------------------------*/
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    margin: auto;
+
+}
+
+.gradient-oben {
+    height: 20vh;
+    background: rgb(1,25,97);
+    background: linear-gradient(0deg, rgba(1,25,97,1) 0%, rgba(255,255,255,1) 100%);
+    margin: 0;
+    padding: 0;
+}
+
+
+.main-hero-section {
+    background-image: url(./images/clouds-hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 70vh;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.main-hero-section .container, .main-hero-section .container .row{
+    height: 100%;
+}
+
+/* Formatting columns in hero selection */
+.my-column-main{
+    fill: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.my-column-main img{
+    width: 60%;
+}
+
+.my-column-main h2{
+    color: white;
+    margin: 30px;
+}
+
+.my-column-main .row :nth-child(1){
+    border-right: 5px white solid;
+}
+
+
+.gradient-unten{
+    height: 10vh;
+    background: rgb(1,25,97);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%,#011961 100%);
+    margin: 0;
+    padding: 0;
+}
+
+
+/*  ------------------------- Styling section mit abstände --------------------- */
+
+.white-paper{
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    
+    border: 2px #41538A solid;
+    min-width: 400px;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+
+    /*Animation für :hover*/
+    transition: all 1s ease;
+}
+
+.white-paper p{
+    margin-top: 8vh;
+    
+}
+
+/* Animation of border in section*/
+
+.white-paper:hover{
+    border: red 2px solid;
+    transform: translateX(50px);
+}
+
+
+/*dESCRIPTION SECTION STYLING*/
+
+.description ul{
+   list-style: none;
+    
+}
+
+
+.description ul li:before {
+    content: "\f110";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    margin-left: 10px;
+    
+}
+
+.description{
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    border: darkgray 2px solid;
+    margin-top: 5vh;
+    padding: 50px;
+    box-shadow: 10px 10px 5px 0px rgba(163,163,163,1);
+    margin-bottom: 100px;
+}
